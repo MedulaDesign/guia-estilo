@@ -457,3 +457,145 @@ pre, code, kbd, samp {
   /* Monospace stack */
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+/* line 24, ../sass/_mejoras-1.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* Estilos de un <hr> emparejados */
+/* line 27, ../sass/_mejoras-1.scss */
+hr {
+  display: block;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Alinear los input y radio a la caja del texto y no en el baseline. */
+/* line 37, ../sass/_mejoras-1.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 38, ../sass/_mejoras-1.scss */
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+/* las listas dentro de NAV y las UL dentro de FORM en general no usan estilos de lista */
+/* line 43, ../sass/_mejoras-1.scss */
+nav ul,
+nav ol,
+form ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* hand cursor on clickable elements */
+/* line 52, ../sass/_mejoras-1.scss */
+.clickable,
+label {
+  cursor: pointer;
+}
+
+/* Los bloquotes deben diferenciarse un poco más del resto del texto */
+/* line 55, ../sass/_mejoras-1.scss */
+blockquote {
+  border-left: 3px solid #BBB;
+  margin-left: 0.5em;
+  padding: 0 0.5em;
+}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+  /* line 65, ../sass/_mejoras-1.scss */
+  body, select, input, textarea, a, a:link, a:visited {
+    color: #000;
+  }
+}
+/*
+** Mejoras de opiniones más arbitrarias a los estilos por defecto de los navegadores.
+** tiene algunas clases helpers (.clickable)
+*/
+/* títulos más prominentes y nunca menores que el cuerpo de texto base */
+/* line 8, ../sass/_mejoras-2.scss */
+h1 {
+  font-size: 2.25em;
+}
+
+/* line 11, ../sass/_mejoras-2.scss */
+h2 {
+  font-size: 1.75em;
+}
+
+/* line 14, ../sass/_mejoras-2.scss */
+h3 {
+  font-size: 1.5em;
+}
+
+/* line 17, ../sass/_mejoras-2.scss */
+h4 {
+  font-size: 1.25em;
+}
+
+/* line 20, ../sass/_mejoras-2.scss */
+h5 {
+  font-size: 1.17em;
+}
+
+/* line 23, ../sass/_mejoras-2.scss */
+h6 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* Los encabezados deben estar má cerca del párrafo que encabezan que del anterior */
+/* line 33, ../sass/_mejoras-2.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+}
+
+/* se ve feo si llega hasta la orilla*/
+/* line 38, ../sass/_mejoras-2.scss */
+hr {
+  margin: 1em;
+}
+
+/* Las tablas deben tener estilos mínimos*/
+/* line 44, ../sass/_mejoras-2.scss */
+th,
+thead td {
+  font-weight: bold;
+}
+
+/* line 48, ../sass/_mejoras-2.scss */
+td,
+th {
+  padding: 0.375em;
+  border-bottom: 1px solid #999;
+}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+  /* line 56, ../sass/_mejoras-2.scss */
+  body, select, input, textarea, a, a:link, a:visited {
+    color: #000;
+  }
+}

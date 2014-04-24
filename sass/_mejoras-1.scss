@@ -15,3 +15,52 @@ pre, code, kbd, samp{
 	/* Monospace stack */
 	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* Estilos de un <hr> emparejados */
+hr {
+	display: block;
+	height: 0;
+	border: 0;
+	border-top: 1px solid #999;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/* Alinear los input y radio a la caja del texto y no en el baseline. */
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: middle;}
+
+/* las listas dentro de NAV y las UL dentro de FORM en general no usan estilos de lista */
+nav ul,
+nav ol, 
+form ul{
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+} 
+
+/* hand cursor on clickable elements */
+.clickable,
+label{cursor: pointer;}
+
+/* Los bloquotes deben diferenciarse un poco más del resto del texto */
+blockquote{
+	border-left: 3px solid #BBB;
+	margin-left: 0.5em;
+	padding: 0 0.5em;
+}
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+	body, select, input, textarea, a, a:link, a:visited {color: #000;}
+}

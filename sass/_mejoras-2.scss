@@ -1,0 +1,57 @@
+/*
+** Mejoras de opiniones más arbitrarias a los estilos por defecto de los navegadores.
+** tiene algunas clases helpers (.clickable)
+*/
+
+
+/* títulos más prominentes y nunca menores que el cuerpo de texto base */
+h1{
+	font-size: 2.25em;
+}
+h2{
+	font-size: 1.75em;
+}
+h3{
+	font-size: 1.5em;
+}
+h4{
+	font-size: 1.25em;
+}
+h5{
+	font-size: 1.17em;
+}
+h6{
+	font-size: 1em;
+	text-transform: uppercase;
+}
+/* Los encabezados deben estar má cerca del párrafo que encabezan que del anterior */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.5em;
+}
+
+/* se ve feo si llega hasta la orilla*/
+hr {
+	margin: 1em;
+}
+
+/* Las tablas deben tener estilos mínimos*/
+th, 
+thead td{
+	font-weight: bold;
+}
+td,
+th{
+	padding: 0.375em;
+	border-bottom: 1px solid #999;
+}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+	body, select, input, textarea, a, a:link, a:visited {color: #000;}
+}
