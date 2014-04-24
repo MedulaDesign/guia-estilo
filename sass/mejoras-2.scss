@@ -1,0 +1,132 @@
+/*
+** Mejoras de opiniones más arbitrarias a los estilos por defecto de los navegadores.
+** tiene algunas clases helpers (.clickable)
+*/
+
+$colorSeleccion: #fcd700;//nosotros partimos con el amarillo médula.
+
+/* títulos más prominentes y nunca menores que el cuerpo de texto base */
+h1{
+	font-size: 2.25em;
+}
+h2{
+	font-size: 1.75em;
+}
+h3{
+	font-size: 1.5em;
+}
+h4{
+	font-size: 1.25em;
+}
+h5{
+	font-size: 1.17em;
+}
+h6{
+	font-size: 1em;
+	text-transform: uppercase;
+}
+/* Los encabezados deben estar má cerca del párrafo que encabezan que del anterior */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.5em;
+}
+
+/* se ve feo si llega hasta la orilla*/
+hr {
+	margin: 1em;
+}
+
+/* Las tablas deben tener estilos mínimos*/
+th, 
+thead td{
+	font-weight: bold;
+}
+td,
+th{
+	padding: 0.375em;
+	border-bottom: 1px solid #999;
+}
+
+/*
+** Utilidades y clases no semánticas
+*/
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+/* other non-semantic helper classes 
+Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
+
+.limpia, .clean{clear:both;}
+.flotaIzquierda{float:left;}
+.flotaDerecha{float:right;}
+.aIzquierda{text-align:left;}
+.aDerecha{text-align:right;}
+
+/* márgenes rápidos */
+$unidadDeMargen:0.5em;
+.mt1{ margin-top: 1 * $unidadDeMargen; }
+.mt2{ margin-top: 2 * $unidadDeMargen; }
+.mt3{ margin-top: 3 * $unidadDeMargen; }
+.mt4{ margin-top: 4 * $unidadDeMargen; }
+.mb1{ margin-bottom: 1 * $unidadDeMargen; }
+.mb2{ margin-bottom: 2 * $unidadDeMargen; }
+.mb3{ margin-bottom: 3 * $unidadDeMargen; }
+.mb4{ margin-bottom: 4 * $unidadDeMargen; }
+.ml1{ margin-left: 1 * $unidadDeMargen; }
+.ml2{ margin-left: 2 * $unidadDeMargen; }
+.ml3{ margin-left: 3 * $unidadDeMargen; }
+.ml4{ margin-left: 4 * $unidadDeMargen; }
+.mr1{ margin-right: 1 * $unidadDeMargen; }
+.mr2{ margin-right: 2 * $unidadDeMargen; }
+.mr3{ margin-right: 3 * $unidadDeMargen; }
+.mr4{ margin-right: 4 * $unidadDeMargen; }
+
+/*
+** Y aquí empiezan las mañas 
+*/
+
+/* casi negro  para el texto*/
+body, 
+select, 
+input, 
+textarea {
+	color: #333;
+}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: $colorSeleccion; color: #fff; text-shadow: none;}
+::selection {background: $colorSeleccion; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: $colorSeleccion;} 
+
+/* figure y fig-caption */
+
+figure {
+  border: 1px solid #BBB;
+  padding: 1em;
+  margin: 1em 0;
+  display: inline-block; /* inline-block tiene algunos problemas cuando el figcaption es más grande que la imagen */
+}
+
+figcaption{
+	color:#555;
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+	body, select, input, textarea, a, a:link, a:visited {color: #000;}
+}

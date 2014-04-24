@@ -1,0 +1,89 @@
+@charset "CP850";
+/*
+** Mejoras básicas a los estilos por defecto de los navegadores.
+*/
+/* line 5, ../sass/mejoras-1.scss */
+body {
+  /* http://css-tricks.com/snippets/css/font-stacks/ */
+  /* Helvetica/Arial-based sans serif stack */
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 10, ../sass/mejoras-1.scss */
+em, i {
+  /* Modern Georgia-based serif stack */
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+/* line 14, ../sass/mejoras-1.scss */
+pre, code, kbd, samp {
+  /* Monospace stack */
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+/* line 24, ../sass/mejoras-1.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/* Estilos de un <hr> emparejados */
+/* line 27, ../sass/mejoras-1.scss */
+hr {
+  display: block;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Alinear los input y radio a la caja del texto y no en el baseline. */
+/* line 37, ../sass/mejoras-1.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 38, ../sass/mejoras-1.scss */
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+/* las listas dentro de NAV y las UL dentro de FORM en general no usan estilos de lista */
+/* line 43, ../sass/mejoras-1.scss */
+nav ul,
+nav ol,
+form ul {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* hand cursor on clickable elements */
+/* line 52, ../sass/mejoras-1.scss */
+.clickable,
+label {
+  cursor: pointer;
+}
+
+/* Los bloquotes deben diferenciarse un poco más del resto del texto */
+/* line 55, ../sass/mejoras-1.scss */
+blockquote {
+  border-left: 3px solid #BBB;
+  margin-left: 0.5em;
+  padding: 0 0.5em;
+}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+  /* line 65, ../sass/mejoras-1.scss */
+  body, select, input, textarea, a, a:link, a:visited {
+    color: #000;
+  }
+}
