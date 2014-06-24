@@ -1,0 +1,95 @@
+/*
+	Estas son las mañas y hábitos que tengo adoptados.
+	Hay definición de @media queries para algunos elementos
+*/
+
+
+/* casi negro  para el texto*/
+body, 
+select, 
+input, 
+textarea {
+	color: #333;
+}
+
+a, a:link {
+	color: #03f;
+	text-decoration: underline;
+}
+a:visited {
+	color: #50f;//este morado es feo, cambiar.
+	text-decoration: underline;
+}
+a:hover {
+	color: #69f; 
+	text-decoration: none;
+}
+a:active{
+	color: #09F;//el rojo se siente peligroso, prefiero un cyan oscuro
+}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: $colorSeleccion; color: #fff; text-shadow: none;}
+::selection {background: $colorSeleccion; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: $colorSeleccion;} 
+
+/* figure y fig-caption */
+
+figure {
+  border: 1px solid #BBB;
+  padding: 1em;
+  margin: 1em 0;
+  display: inline-block; /* inline-block tiene algunos problemas cuando el figcaption es más grande que la imagen */
+}
+
+figcaption{
+	color:#555;
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+/*
+  Con esto los definition list parecen definición de diccionario
+*/
+dl{
+	margin: 0.5em 0;
+	padding: 0;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+dt{
+	clear: left;
+	float: left;
+	width: 33%;
+	margin: 0 0 0.5em 0;
+	font-weight: bold;
+}
+dd{
+	float: left;
+	width: 66%;
+	margin: 0 0 0.5em 0;	
+}
+
+@media (min-width: 37em) {//sobre 592
+    dt{
+		width: 25%;
+	}
+	dd{
+		width: 74%;
+	}
+}
+
+@media (min-width: 49em) {//sobre 784
+    dt{
+		width: 20%;
+	}
+	dd{
+		width: 79%;
+	}
+    .wrapper{
+    	max-width: 61em;
+    	margin: 0 auto;
+    }
+}

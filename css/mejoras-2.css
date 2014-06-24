@@ -196,70 +196,10 @@ Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
   margin-right: 2em;
 }
 
-/*
-** Y aquí empiezan las mañas 
-*/
-/* casi negro  para el texto*/
-/* line 99, ../sass/mejoras-2.scss */
-body,
-select,
-input,
-textarea {
-  color: #333;
-}
-
-/* line 103, ../sass/mejoras-2.scss */
-a {
-  color: #03f;
-}
-
-/* line 104, ../sass/mejoras-2.scss */
-a:hover {
-  color: #69f;
-}
-
-/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
-/* line 107, ../sass/mejoras-2.scss */
-::-moz-selection {
-  background: #fcd700;
-  color: #fff;
-  text-shadow: none;
-}
-
-/* line 108, ../sass/mejoras-2.scss */
-::selection {
-  background: #fcd700;
-  color: #fff;
-  text-shadow: none;
-}
-
-/*	j.mp/webkit-tap-highlight-color */
-/* line 111, ../sass/mejoras-2.scss */
-a:link {
-  -webkit-tap-highlight-color: #fcd700;
-}
-
-/* figure y fig-caption */
-/* line 115, ../sass/mejoras-2.scss */
-figure {
-  border: 1px solid #BBB;
-  padding: 1em;
-  margin: 1em 0;
-  display: inline-block;
-  /* inline-block tiene algunos problemas cuando el figcaption es más grande que la imagen */
-}
-
-/* line 122, ../sass/mejoras-2.scss */
-figcaption {
-  color: #555;
-  /* Modern Georgia-based serif stack */
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-}
-
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {
-  /* line 131, ../sass/mejoras-2.scss */
+  /* line 95, ../sass/mejoras-2.scss */
   body, select, input, textarea, a, a:link, a:visited {
     color: #000;
   }

@@ -721,11 +721,20 @@ Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
   margin-right: 2em;
 }
 
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+  /* line 95, ../sass/mejoras-2.scss */
+  body, select, input, textarea, a, a:link, a:visited {
+    color: #000;
+  }
+}
 /*
-** Y aquí empiezan las mañas 
+	Estas son las mañas y hábitos que tengo adoptados.
+	Hay definición de @media queries para algunos elementos
 */
 /* casi negro  para el texto*/
-/* line 99, ../sass/mejoras-2.scss */
+/* line 11, ../sass/mejoras-3.scss */
 body,
 select,
 input,
@@ -733,25 +742,38 @@ textarea {
   color: #333;
 }
 
-/* line 103, ../sass/mejoras-2.scss */
-a {
+/* line 15, ../sass/mejoras-3.scss */
+a, a:link {
   color: #03f;
+  text-decoration: underline;
 }
 
-/* line 104, ../sass/mejoras-2.scss */
+/* line 19, ../sass/mejoras-3.scss */
+a:visited {
+  color: #50f;
+  text-decoration: underline;
+}
+
+/* line 23, ../sass/mejoras-3.scss */
 a:hover {
   color: #69f;
+  text-decoration: none;
+}
+
+/* line 27, ../sass/mejoras-3.scss */
+a:active {
+  color: #09F;
 }
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
-/* line 107, ../sass/mejoras-2.scss */
+/* line 32, ../sass/mejoras-3.scss */
 ::-moz-selection {
   background: #fcd700;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 108, ../sass/mejoras-2.scss */
+/* line 33, ../sass/mejoras-3.scss */
 ::selection {
   background: #fcd700;
   color: #fff;
@@ -759,13 +781,13 @@ a:hover {
 }
 
 /*	j.mp/webkit-tap-highlight-color */
-/* line 111, ../sass/mejoras-2.scss */
+/* line 36, ../sass/mejoras-3.scss */
 a:link {
   -webkit-tap-highlight-color: #fcd700;
 }
 
 /* figure y fig-caption */
-/* line 115, ../sass/mejoras-2.scss */
+/* line 40, ../sass/mejoras-3.scss */
 figure {
   border: 1px solid #BBB;
   padding: 1em;
@@ -774,18 +796,65 @@ figure {
   /* inline-block tiene algunos problemas cuando el figcaption es más grande que la imagen */
 }
 
-/* line 122, ../sass/mejoras-2.scss */
+/* line 47, ../sass/mejoras-3.scss */
 figcaption {
   color: #555;
   /* Modern Georgia-based serif stack */
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
-/* Print styles!
--------------------------------------------------------------------------------*/
-@media print {
-  /* line 131, ../sass/mejoras-2.scss */
-  body, select, input, textarea, a, a:link, a:visited {
-    color: #000;
+/*
+  Con esto los definition list parecen definición de diccionario
+*/
+/* line 56, ../sass/mejoras-3.scss */
+dl {
+  margin: 0.5em 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 62, ../sass/mejoras-3.scss */
+dt {
+  clear: left;
+  float: left;
+  width: 33%;
+  margin: 0 0 0.5em 0;
+  font-weight: bold;
+}
+
+/* line 69, ../sass/mejoras-3.scss */
+dd {
+  float: left;
+  width: 66%;
+  margin: 0 0 0.5em 0;
+}
+
+@media (min-width: 37em) {
+  /* line 76, ../sass/mejoras-3.scss */
+  dt {
+    width: 25%;
+  }
+
+  /* line 79, ../sass/mejoras-3.scss */
+  dd {
+    width: 74%;
+  }
+}
+@media (min-width: 49em) {
+  /* line 85, ../sass/mejoras-3.scss */
+  dt {
+    width: 20%;
+  }
+
+  /* line 88, ../sass/mejoras-3.scss */
+  dd {
+    width: 79%;
+  }
+
+  /* line 91, ../sass/mejoras-3.scss */
+  .wrapper {
+    max-width: 61em;
+    margin: 0 auto;
   }
 }
