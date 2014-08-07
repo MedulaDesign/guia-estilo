@@ -1,0 +1,315 @@
+/**
+ * Estilos para elementos de formularios
+ **/
+ @mixin liInputAnchos{
+	width: 96%;
+	max-width:834px;
+	input[type="text"],
+	input[type="tel"],
+	input[type="email"],
+	input[type="search"],
+	input[type="telephone"],
+	input[type="url"],
+	input[type="password"],
+	.tipoInput,
+	input[type="number"]{
+		width: 83.25%;
+		margin-left: 14%;
+		padding: 4px 1%;
+	}
+ }
+
+/**
+
+888b.    8    8    88888    88888    .d88b.    8b  8    .d88b.
+8wwwP    8    8      8        8      8P  Y8    8Ybm8    YPwww.
+8   b    8b..d8      8        8      8b  d8    8  "8        d8
+888P'    `Y88P'      8        8      `Y88P'    8   8    `Y88P'
+
+ */
+
+.button,
+button,
+input[type=button],
+input[type=submit]{
+	box-sizing: content-box;
+	min-height: 38px;
+	display: inline-block;
+	vertical-align: top;
+	color: $grisMasClaro;
+	border: 1px solid $grisNegro;
+	border-radius: 4px;
+	padding: 4px 24px;
+	background: $grisMasOscuro;
+	background: $grisMasOscuro linear-gradient(top, $grisOscuro 0%, $grisMasOscuro 100%);
+	text-shadow: 1px 1px 1px black;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	&:link, &:visited{
+		color:$grisMasClaro;
+		background: linear-gradient(top, $grisOscuro 0%, $grisMasOscuro 100%);
+	}
+	&:hover{
+		color: white;
+		background: $grisNegro;
+		background: linear-gradient(bottom, $grisOscuro 0%, $grisMasOscuro 100%);
+	}
+	&:active{
+		color: $grisClaro;
+		background: black;
+		background: linear-gradient(top, $grisNegro 0%, $grisMasOscuro 100%);
+	}
+	&:focus{
+
+	}
+	&.small{
+		padding:0 12px;
+	}
+	&[disabled]{
+		background: #888;
+		filter: none;
+		color:#BBB;
+		border: 1px solid $grisClaro;
+		text-shadow: none;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+	}
+}
+.button{
+	line-height: 38px;
+	vertical-align: baseline;
+	&:link, &:visited{
+		text-decoration: none;
+	}
+}
+
+/**
+
+888    8b  8    888b.    8    8    88888
+ 8     8Ybm8    8  .8    8    8      8
+ 8     8  "8    8wwP'    8b..d8      8
+888    8   8    8        `Y88P'      8
+
+ */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="telephone"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+.tipoInput,
+.input {
+	line-height: 28px;
+	height: 28px;
+	min-width: 200px;
+	padding: 4px;
+	border: solid 1px #ADAFB1;
+	background-color: #FFF;
+	font-size: 14px;
+	color: $grisNegro;
+	margin: 5px;
+	&.error, .error &{
+		border: 1px solid $rojo;
+	}
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+textarea {
+	width: 96%;
+	//max-width:406px;
+	min-height: 150px;
+	padding: 0.25em 1%;
+	margin: 5px 0 5px 3px;
+	border: 1px solid #ADAFB1;
+	background-color: #FFF;
+	font-size: 16px;
+	border-radius: 5px;
+	&.descipcion,
+	&.descripcion{
+		min-height:192px;
+	}
+}
+select{
+	margin: 5px;
+    min-width: 269px;
+    line-height: 38px;
+    height: 38px;
+    .ie8 &{
+	    padding-bottom:6px;
+    }
+}
+
+.opciones{
+/* No sé lo que hace esta clase .opciones, pero no me atreví a sacarlo */
+	padding-top:0.5em;
+	label{
+		background:#E0DFDF;
+		padding:0.2em 0.3em;
+		margin-right:0.3em;
+		border-radius:4px;
+	}
+}
+
+/*
+
+8       888    .d88b.    88888    .d88b.
+8        8     YPwww.      8      YPwww.
+8        8         d8      8          d8
+8888    888    `Y88P'      8      `Y88P'
+
+*/
+
+//*
+form, fieldset, .tipoForm{
+	& > ul{
+		margin: 0.5em 0;
+		padding:0;
+		li{
+			display: block;
+			width: 96%;
+			max-width: 760px;
+			min-height: 48px;
+			margin-left: 2%;
+			margin-top: 1em;
+			background-color: $grisMasClaro;
+			border: 1px solid $grisMasClaro;
+			position: relative;
+			border-radius: 5px;
+			transition: background-color 0.4s ease-in-out;
+			&.transparente{
+				background: none;
+				border: none;
+			}
+			&.pegado {
+				margin-top:0.5em;
+			}
+			&.sin-margen {
+				margin-top:0;
+			}
+			&.form-focus {
+				background-color: $verde;
+				color: black;
+				label{
+					color: white;
+				}
+				p{
+					color:white;
+				}
+				&.dentro{
+					label,
+					.tipoLabel{
+						color: white;
+						border-bottom: none;
+					}
+				}
+			}
+			&.error {
+				background-color: #F9DAD7;
+				color: #910000;
+				p{
+					color: black;
+				}
+				&.form-focus{
+					background-color: #910000;
+					p{
+						color: white;
+					}
+				}
+			}
+			&.dentro{
+				label,
+				.tipoLabel{
+					position: static;
+					display: inline-block;
+					vertical-align: baseline;
+					line-height: 1.5em;
+					padding: 12px 1em;
+				}
+			}
+			& > label,
+			& > .tipoLabel{
+				display: block;
+				min-width: 100px;
+				margin: 0.5em 1% 0 1%;
+			}
+			p{
+				margin: 0.25em 1%;
+			}
+			input[type="text"],
+			input[type="tel"],
+			input[type="email"],
+			input[type="search"],
+			input[type="telephone"],
+			input[type="url"],
+			input[type="password"],
+			.tipoInput,
+			input[type="number"]{
+				width: 93%;
+				margin-left: 1%;
+				padding: 4px 2%;
+			}
+			textarea{
+				//border: none;
+			}
+			select{
+				margin: 5px 3%;
+			    width: 93.5%;
+			}
+			.columna-simple &{
+				display: block;
+			}
+		}
+	}
+}
+
+@media (min-width: 480px) {//sobre 480
+	form, fieldset{
+		& > ul{
+			li{
+				input[type="text"],
+				input[type="tel"],
+				input[type="email"],
+				input[type="search"],
+				input[type="telephone"],
+				input[type="url"],
+				input[type="password"],
+				.tipoInput,
+				input[type="number"]{
+					width: 94.5%;
+					margin-left: 1%;
+					padding: 4px 1.5%;
+				}
+				& > label,
+				& > .tipoLabel{
+					margin-left: 1%;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 750px) {//sobre 750
+	form, fieldset{
+		& > ul{
+			li{
+				&.wide{
+					@include liInputAnchos;
+				}
+				input[type="text"],
+				input[type="tel"],
+				input[type="email"],
+				input[type="search"],
+				input[type="telephone"],
+				input[type="url"],
+				input[type="password"],
+				.tipoInput,
+				input[type="number"]{
+					width: 96%;
+					margin-left: 1%;
+					padding: 4px 1%;
+				}
+			}
+		}
+	}
+}
+//*/

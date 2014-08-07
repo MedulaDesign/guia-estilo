@@ -1,0 +1,48 @@
+$brandColor: #289B48;
+$grisClaro: #D6D6D6;
+$grisMasClaro: #F0F0F0;
+$grisOscuro: #414141;
+$grisMasOscuro: #333333;
+$grisNegro: #1A1A1A;
+$amarillo: #E5BC21;
+$verdeClaro: #84BF41;
+$verde: #289B48;
+$rojo: #C42220;
+$amarilloIntenso: #fcd700;//amarillo médula
+
+$sans-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-stack: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+$display-stack: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+
+.brandColor{color:$brandColor;}
+.brandColor-bg{background-color: $brandColor;}
+.grisClaro{color:$grisClaro;}
+.grisClaro-bg{background-color: $grisClaro;}
+.grisMasClaro{color:$grisMasClaro;}
+.grisMasClaro-bg{background-color: $grisMasClaro;}
+.grisOscuro{color:$grisOscuro;}
+.grisOscuro-bg{background-color: $grisOscuro;}
+.grisMasOscuro{color:$grisMasOscuro;}
+.grisMasOscuro-bg{background-color: $grisMasOscuro;}
+.grisNegro{color:$grisNegro;}
+.grisNegro-bg{background-color: $grisNegro;}
+.amarillo{color:$amarillo;}
+.amarillo-bg{background-color: $amarillo;}
+.verdeClaro{color:$verdeClaro;}
+.verdeClaro-bg{background-color: $verdeClaro;}
+.verde{color:$verde;}
+.verde-bg{background-color: $verde;}
+.amarilloIntenso{color:$amarilloIntenso;}
+.amarilloIntenso-bg{background-color: $amarilloIntenso;}
+.rojo{color:$rojo;}
+.rojo-bg{background-color: $rojo;}
+
+.sans{
+	font-family: $sans-stack;
+}
+.serif{
+	font-family: $serif-stack;
+}
+.display{
+	font-family: $display-stack;
+}

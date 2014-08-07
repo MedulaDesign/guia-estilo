@@ -6,11 +6,150 @@
 <head>
 	<meta charset="utf-8">
 	<title>Guías de Estilo Base</title>
+	<link rel="stylesheet" href="css/guia.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <img src="imgs/logo-NaturFresh.png" alt="Logotipo Natur Fresh">
-<h1>Título H1 <a href="#">con link</a></h1>
+<section class="definiciones">
+	<h2>Colores</h2>
+	<ul class="colores">
+		<li class="color">
+			<h3>Color de Marca</h3>
+			<div class="verde-bg muestra"></div>
+			<p class="hex">#289B48</p>
+			<p class="variable">$verde</p> 
+			<p class="variable">.verde,
+			<br> .verde-bg</p>
+		</li>
+		<li class="color">
+			<h3>Gris Claro</h3>
+			<div class="grisClaro-bg muestra"></div>
+			<p class="hex">#D6D6D6</p>
+			<p class="variable">$grisClaro</p> 
+			<p class="variable">.grisClaro,
+			<br> .grisClaro-bg</p>
+		</li>
+		<li class="color">
+			<h3>Gris Muy Claro</h3>
+			<div class="grisMuyClaro-bg muestra"></div>
+			<p class="hex">#F0F0F0</p>
+			<p class="variable">$grisMuyClaro</p> 
+			<p class="variable">.grisMuyClaro,
+			<br> .grisMuyClaro-bg</p>
+		</li>
+		<li class="color">
+			<h3>Gris Oscuro</h3>
+			<div class="grisOscuro-bg muestra"></div>
+			<p class="hex">#414141</p>
+			<p class="variable">$grisOscuro</p> 
+			<p class="variable">.grisOscuro,
+			<br> .grisOscuro-bg</p>
+		</li>
+		<li class="color">
+			<h3>Gris Mas Oscuro</h3>
+			<div class="grisMasOscuro-bg muestra"></div>
+			<p class="hex">#333333</p>
+			<p class="variable">$grisMasOscuro</p> 
+			<p class="variable">.grisMasOscuro,
+			<br> .grisMasOscuro-bg</p>
+		</li>
+		<li class="color">
+			<h3>Gris Negro</h3>
+			<div class="grisNegro-bg muestra"></div>
+			<p class="hex">#1A1A1A</p>
+			<p class="variable">$grisNegro</p> 
+			<p class="variable">.grisNegro,
+			<br> .grisNegro-bg</p>
+		</li>
+		<li class="color">
+			<h3>Amarillo Intenso</h3>
+			<div class="amarilloIntenso-bg muestra"></div>
+			<p class="hex">#FCD700</p>
+			<p class="variable">$amarilloIntenso</p> 
+			<p class="variable">.amarilloIntenso,
+			<br> .amarilloIntenso-bg</p>
+		</li>
+		<li class="color">
+			<h3>Amarillo</h3>
+			<div class="amarillo-bg muestra"></div>
+			<p class="hex">#E5BC21</p>
+			<p class="variable">$amarillo</p> 
+			<p class="variable">.amarillo,
+			<br> .amarillo-bg</p>
+		</li>
+		<li class="color">
+			<h3>Verde Claro</h3>
+			<div class="verdeClaro-bg muestra"></div>
+			<p class="hex">#84BF41</p>
+			<p class="variable">$verdeClaro</p> 
+			<p class="variable">.verdeClaro,
+			<br> .verdeClaro-bg</p>
+		</li>
+		<li class="color">
+			<h3>Verde</h3>
+			<div class="verde-bg muestra"></div>
+			<p class="hex">#4D9680</p>
+			<p class="variable">$verde</p> 
+			<p class="variable">.verde,
+			<br> .verde-bg</p>
+		</li>
+		<li class="color">
+			<h3>Rojo</h3>
+			<div class="rojo-bg muestra"></div>
+			<p class="hex">#C42220</p>
+			<p class="variable">$rojo</p> 
+			<p class="variable">.rojo,
+			<br> .rojo-bg</p>
+		</li>
+	</ul>
+	<hr>
+	<h2>Tipografía</h2>
+	<ul class="fonts">
+		<li class="font">
+			<h3>Font Global (Sans)</h3>
+			<p class="nombre sans">Frutiger</p>
+			<p class="variable">$sans-stack</p>
+			<p class="variable"><code>.sans</code></p>
+			<ul class="specimen sans">
+				<li>Regular</li>
+				<li><i>Italic</i></li>
+				<li><b>Bold</b></li>
+				<li><b><i>Bold-Italic</i></b></li>
+			</ul>
+			<p class="descripcion"></p>
+		</li>
+		<li class="color">
+			<h3>Serif</h3>
+			<p class="nombre serif">Constantia</p>
+			<p class="variable">$serif-stack</p>
+			<p class="variable"><code>.serif</code></p>
+			<ul class="specimen serif">
+				<li>Regular</li>
+				<li><i>Italic</i></li>
+				<li><b>Bold</b></li>
+				<li><b><i>Bold-Italic</i></b></li>
+			</ul>
+			<p class="descripcion"></p>
+		</li>
+		<li class="color">
+			<h3>Títulos</h3>
+			<p class="nombre display">Impact</p>
+			<p class="variable">$display-stack</p>
+			<p class="variable"><code>.display</code></p>
+			<ul class="specimen display">
+				<li>Regular</li>
+				<li><i>Italic</i></li>
+				<li><b>Bold</b></li>
+				<li><b><i>Bold-Italic</i></b></li>
+			</ul>
+			<!--<p class="descripcion">Esta tipografía debe ser usada al menos a 32px de tamaño.</p>-->
+		</li>
+	</ul>
+	<p><strong>Nota:</strong> Las tipografías con <b>*</b> (asterisco) no tienen una fuente cargada y es adaptada por el navegador. O sea, no usar en los grosores o estilos con asterisco.</p>
+</section>
+<hr>
+<section><h1>Título H1 <a href="#">con link</a></h1>
 <p>Un corto párrafo de texto justo debajo del encabezado H1. Debemos agregar más texto y contenido para descubrir hasta donde llega el ancho de la caja del párrafo, es paráctico hacerlo también para los encabezados y bajadas de texto. Debemos enunciar un <a href="#">link o ancla</a> dentro del párrafo e idealmente hacer.</p>
 <p>Un segundo párrafo para hacernos una clara idea de los márgenes entre párrafos y con el siguiente encabezado. Hay gente que gusta de dar estilo al elemento <code>&lt;section></code> pero prefiero usar este espacio para difinir los elementos que van dentro del párrafo, como <small>small o pequeño</small>, <strong>strong</strong>, <b>b (bold)</b>, <em>em (emphasis)</em>, <i>i (italics o cusrivas)</i>.</p>
 <hr>
@@ -36,6 +175,9 @@
 <p>Desde hace algún tiempo ya, hemos ido eliminando completamente el uso de <i>Lorem Ipsum</i>, porque termina ocultando problemas de contenido. Muchas veces, entre el cliente y uno mismo nos conformamos con esta muletilla e ignoramos la falta del contenido, muchas veces, haste que ya es demasiado tarde. Ha pasado que ni siquiera existe el contenido que se suponía iba en el lugar llenado con texto simulado.</p>
 <h6>Subtítulo H6 <a href="#">con link</a></h6>
 <p>Aunque se puede argumentar que este mismo ejercicio es una contradicción de lo anterior. Porque estamos inventando párrafos y texto que no es contenido final, con el sólo propósito de testear los estilos gráficos de una manera genérica.</p>
+</section>
+<section class="grid wide">
+<code>&lt;section class="grid wide"></code>
 <h2>Imágenes</h2>
 <h3>Imagen sola</h3>
 <img src="imgs/el-rey-abejo-lego.jpg" alt="Figura de lego de personaje, El Rey Abejo">
@@ -105,6 +247,26 @@
 		<li><label>Etiqueta 4: con el input adentro <input type="text" name="nombre4" id="nombre4" placeholder="con texto placeholder"></label>
 		<li><label for="nombre5">Etiqueta 5: Búsqueda</label>
 		<input type="search" name="nombre5" id="nombre5"></li>
+
+		<li class="error"><label>li con clase <code>error</code> e input adentro</label> <input type="text" name="nombre15" id="nombre15"></li>
+
+			<li class="error"><label>li con clase <code>error</code> e input adentro</label> <input type="text" name="nombre16" id="nombre16">
+			<p>Por favor ingrese correctamente sus datos.</p>
+			</li>
+			
+			<li class="ancha"><label for="nombre16">Contenedor con clase <code>.ancha</code> o <code>.wide</code></label>
+			<input type="text" name="nombre16" id="nombre16"></li>
+
+			<li class="ancha transparente">Este es un <code>&lt;li></code> con clase <code>.transparente</code> por lo que no tiene fondo. También se pueden agregar las clases <code>.pegado</code> para un margen pequeño hacia arriba y <code>.sin-margen</code> para no tener margen hacia arriba.</li>
+
+			<li class="ancha"><p>Para los <code>input[checkbox]</code> y <code>input[radio]</code> agregaremos la clase <strong><code>.dentro</code></strong> y envolveremos los input en su label de la siguiente manera:</p>
+			<blockquote><code><pre>
+&lt;li class="dentro">
+&lt;label for="nombre6">Etiqueta para checkbox 
+&lt;input type="checkbox" name="nombre6" id="nombre6">&lt;/label>
+&lt;/li>
+		</pre></code></blockquote></li>
+
 		<li><label for="nombre6">Etiqueta Checkbox</label>
 		<input type="checkbox" name="nombre6" id="nombre6"></li>
 		<li><label><input type="checkbox" name="nombre7" id="nombre7"> Etiqueta Checkbox con caja dentro del <code>&lt;label></code></label></li>
@@ -113,6 +275,23 @@
 		<li><input type="radio" id="nombre12" name="nombreRadios"><label for="nombre12">Etiqueta después del radio</label></li>
 		<li><label><input type="radio" id="nombre13" name="nombreRadios"> Etiqueta Radio con caja dentro del <code>&lt;label></code></label></li>
 		<li><label>Etiqueta Radio con caja dentro del <code>&lt;label></code>, a la derecha: <input type="radio" id="nombre14" name="nombreRadios"></label></li>
+
+		<li class="ancha"><p>Para múltiples <code>input[checkbox]</code> y <code>input[radio]</code> podemos una serie de <code>&lt;label></code> dentro del <code>&lt;li></code> de la siguiente manera:</p>
+			<blockquote><code><pre>
+&lt;li class="ancha dentro">
+&lt;label>&lt;input type="radio" name="grupoIn"> etiqueta 1&lt;/input>&lt;/label>
+&lt;label>&lt;input type="radio" name="grupoIn"> etiqueta 2&lt;/input>&lt;/label>
+&lt;label>&lt;input type="radio" name="grupoIn"> etiqueta 3&lt;/input>&lt;/label>
+&lt;/li>
+		</pre></code></blockquote></li>			
+			
+			<li class="ancha dentro">
+				<label><input type="radio" name="grupoIn" value="1"> etiqueta 1</input></label>
+				<label><input type="radio" name="grupoIn" value="2"> etiqueta 2</input></label>
+				<label><input type="radio" name="grupoIn" value="3"> etiqueta 3</input></label>
+				<label><input type="radio" name="grupoIn" value="4"> etiqueta 4</input></label>
+			</li>
+
 		<li><label for="elSelect">Etiqueta: Seleccione un número</label> <select name="elSelect">
 			<option value="0">Seleccione...</option>
 			<option value="1">Uno</option>
@@ -120,9 +299,11 @@
 			<option value="3">Tres</option>
 		</select></li>
 		<li><input type="button" name="nombre8" id="nombre8" value="Input botón">
-		<button type="button">Button</button>
+		<button type="button">Button</button> 
+		<button type="button">Botón en <br>dos líneas</button>
 		<p>Ojo que un button debe tener <code>type="button"</code> si no se quiere que envíe automáticamente el formulario.</p></li>
-		<li>A veces es útil tener estilos para que <a href="#" class="button">link</a> parezca botón <code>a.button</code></li>
+		
+		<li>A veces es útil tener estilos para que <a href="#" class="button">link</a> parezca botón <code>a.button</code> o un botón pequeño <a href="#" class="button small">small link</a> <code>a.button.small</code></li>
 		<li><textarea name="nombre7" id="nombre7" cols="30" rows="10"></textarea></li>
 	</ul>
 </form>
@@ -193,6 +374,25 @@
 	<li>Fechas <code>&lt;time></code></li>
 	<li>Direcciones</li>
 	<li>Marcas de edición <code>&lt;mark>&lt;del>&lt;ins></code></li>
-</ul>
+</ul></section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+$(window).load(function(){
+    
+    //chiche para los formularios, no es crítico
+    setTimeout(function () {
+        var campos = $('form').find('input, textarea, select');
+        campos.focus(function (){
+            $(this).closest('li').addClass('form-focus');
+        });
+        campos.blur(function(){
+            $(this).closest('li').removeClass('form-focus');
+        });
+    }, 100);    
+    
+});
+</script>
+
 </body>
 </html>
