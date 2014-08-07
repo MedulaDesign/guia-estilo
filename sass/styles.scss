@@ -6,6 +6,11 @@
 @import "mejoras-2";
 @import "mejoras-3";
 
+$gridGutter:1em;
+$anchoDefault:970px;
+$anchoWide:1140px;
+$anchoMinimo:776px;
+
 @import "simplegrid";
 @import "forms";
 

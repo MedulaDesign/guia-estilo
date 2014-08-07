@@ -47,3 +47,23 @@
 		font-size: 2em;
 	}
 }
+.grid{
+	.content {
+		padding: 1em;
+		h3{
+			font-size: 1em;
+			margin: 0;
+		}
+		&.grisMasOscuro-bg, &.grisOscuro-bg, &.grisNegro-bg, &.rojo-bg{
+			color: white;
+		}
+	}
+	.col-1-12{
+		.content{
+			h3{
+				font-size: 0.865em;
+				line-height: 16px;
+			}
+		}
+	}
+}

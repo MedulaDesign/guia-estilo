@@ -31,3 +31,14 @@
   font-size: 2em; }
 .definiciones .specimen {
   font-size: 2em; }
+
+.grid .content {
+  padding: 1em; }
+  .grid .content h3 {
+    font-size: 1em;
+    margin: 0; }
+  .grid .content.grisMasOscuro-bg, .grid .content.grisOscuro-bg, .grid .content.grisNegro-bg, .grid .content.rojo-bg {
+    color: white; }
+.grid .col-1-12 .content h3 {
+  font-size: 0.865em;
+  line-height: 16px; }

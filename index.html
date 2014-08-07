@@ -32,11 +32,11 @@
 		</li>
 		<li class="color">
 			<h3>Gris Muy Claro</h3>
-			<div class="grisMuyClaro-bg muestra"></div>
+			<div class="grisMasClaro-bg muestra"></div>
 			<p class="hex">#F0F0F0</p>
-			<p class="variable">$grisMuyClaro</p> 
-			<p class="variable">.grisMuyClaro,
-			<br> .grisMuyClaro-bg</p>
+			<p class="variable">$grisMasClaro</p> 
+			<p class="variable">.grisMasClaro,
+			<br> .grisMasClaro-bg</p>
 		</li>
 		<li class="color">
 			<h3>Gris Oscuro</h3>
@@ -376,6 +376,591 @@
 	<li>Marcas de edición <code>&lt;mark>&lt;del>&lt;ins></code></li>
 </ul></section>
 
+
+<section class="grid wide" id="grid">
+	<p><code>&lt;section class="grid wide"></code></p>
+	<h2>Grid system</h2>
+	<p>Sitema de grilla de 3 y 12 columnas</p>
+	<hr>
+<blockquote><code><pre>
+	&lt;div class="grid grid-pad">
+		&lt;div class="col-1-3">&lt;div class="content verde-bg">&lt;code>div.col-1-3&lt;/code>&lt;/div>&lt;/div>
+		&lt;div class="col-1-3">&lt;div class="content verdeClaro-bg">&lt;code>div.col-1-3&lt;/code>&lt;/div>&lt;/div>
+		&lt;div class="col-1-3">&lt;div class="content amarillo-bg">&lt;code>div.col-1-3&lt;/code>&lt;/div>&lt;/div>
+	&lt;/div>
+&lt;/section></pre></code></blockquote>
+	<div class="grid grid-pad">
+		<div class="col-1-3"><div class="content verde-bg"><code>div.col-1-3</code></div></div>
+		<div class="col-1-3"><div class="content verdeClaro-bg"><code>div.col-1-3</code></div></div>
+		<div class="col-1-3"><div class="content amarillo-bg"><code>div.col-1-3</code></div></div>
+	</div>
+	<hr>
+	<div>
+		<!-- Grid 1/2 -->
+			<div class="grid grid-pad">
+				<div class="col-1-2">
+					<div class="content verde-bg">
+						<h3>
+							col-1-2
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-2">
+					<div class="content verde-bg">
+						<h3>
+							col-1-2
+						</h3>
+					</div>
+				</div>
+			</div>
+		<!-- Grid 1/3 -->
+			<div class="grid grid-pad">
+				<div class="col-1-3">
+					<div class="content verdeClaro-bg">
+						<h3>
+							col-1-3
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-3">
+					<div class="content verdeClaro-bg">
+						<h3>
+							col-2-3
+						</h3>
+					</div>
+				</div>
+			</div>
+		<!-- Grid 1/4 -->
+			<div class="grid grid-pad">
+				<div class="col-1-4">
+					<div class="content grisClaro-bg">
+						<h3>
+							col-1-4
+						</h3>
+					</div>
+				</div>
+				<div class="col-3-4">
+					<div class="content grisClaro-bg">
+						<h3>
+							col-3-4
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-2-4">
+					<div class="content grisClaro-bg">
+						<h3>
+							col-2-4
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="content grisClaro-bg">
+						<h3>
+							col-1-4
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="content grisClaro-bg">
+						<h3>
+							col-1-4
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/5 -->
+			<div class="grid grid-pad">
+				<div class="col-1-5">
+					<div class="content grisMasClaro-bg">
+						<h3>
+							col-1-5
+						</h3>
+					</div>
+				</div>
+				<div class="col-4-5">
+					<div class="content grisMasClaro-bg">
+						<h3>
+							col-4-5
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-2-5">
+					<div class="content grisMasClaro-bg">
+						<h3>
+							col-2-5
+						</h3>
+					</div>
+				</div>
+				<div class="col-3-5">
+					<div class="content grisMasClaro-bg">
+						<h3>
+							col-3-5
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/6 -->
+			<div class="grid grid-pad">
+				<div class="col-1-6">
+					<div class="content grisMasOscuro-bg">
+						<h3>
+							col-1-6
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-6">
+					<div class="content grisMasOscuro-bg">
+						<h3>
+							col-2-6
+						</h3>
+					</div>
+				</div>
+				<div class="col-3-6">
+					<div class="content grisMasOscuro-bg">
+						<h3>
+							col-3-6
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-4-6">
+					<div class="content grisMasOscuro-bg">
+						<h3>
+							col-4-6
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-6">
+					<div class="content grisMasOscuro-bg">
+						<h3>
+							col-2-6
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/7 -->
+			<div class="grid grid-pad">
+				<div class="col-1-7">
+					<div class="content grisNegro-bg">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content grisNegro-bg">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content grisNegro-bg">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content grisNegro-bg">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content grisNegro-bg">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content grisNegro-bg">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content grisNegro-bg">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/8 -->
+			<div class="grid grid-pad">
+				<div class="col-1-8">
+					<div class="content amarilloIntenso-bg">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-8">
+					<div class="content amarilloIntenso-bg">
+						<h3>
+							col-2-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-4-8">
+					<div class="content amarilloIntenso-bg">
+						<h3>
+							col-4-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-8">
+					<div class="content amarilloIntenso-bg">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-6-8">
+					<div class="content amarilloIntenso-bg">
+						<h3>
+							col-6-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-8">
+					<div class="content amarilloIntenso-bg">
+						<h3>
+							col-2-8
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/9 -->
+			<div class="grid grid-pad">
+				<div class="col-1-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-3-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-3-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-6-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-6-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-3-9">
+					<div class="content amarillo-bg">
+						<h3>
+							col-3-9
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/10 -->
+			<div class="grid grid-pad">
+				<div class="col-1-10">
+					<div class="content rojo-bg">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-10">
+					<div class="content rojo-bg">
+						<h3>
+							2-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-5-10">
+					<div class="content rojo-bg">
+						<h3>
+							5-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content rojo-bg">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content rojo-bg">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-4-10">
+					<div class="content rojo-bg">
+						<h3>
+							4-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content rojo-bg">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-5-10">
+					<div class="content rojo-bg">
+						<h3>
+							5-10
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-2-10">
+					<div class="content rojo-bg">
+						<h3>
+							2-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-8-10">
+					<div class="content rojo-bg">
+						<h3>
+							8-10
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/11 -->
+			<div class="grid grid-pad">
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content verde-bg">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/12 -->
+			<div class="grid grid-pad">
+				<div class="col-1-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							2-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-3-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							3-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-4-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							4-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-6-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							6-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-3-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							3-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							2-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-4-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							4-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-8-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							8-12
+						</h3>
+					</div>
+				</div>
+			</div>
+	</div>
+	<hr>
+</section>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>
 $(window).load(function(){
