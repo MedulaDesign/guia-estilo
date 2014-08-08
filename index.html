@@ -8,9 +8,13 @@
 	<title>Guías de Estilo Base</title>
 	<link rel="stylesheet" href="css/guia.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<!--[if lt IE 9 ]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body>
 <img src="imgs/logo-NaturFresh.png" alt="Logotipo Natur Fresh">
+<br>
+<a href="imgs/logo-NaturFresh.svg" class="button">Descargar Logo en SVG</a>
 <section class="definiciones">
 	<h2>Colores</h2>
 	<ul class="colores">
@@ -301,9 +305,19 @@
 		<li><input type="button" name="nombre8" id="nombre8" value="Input botón">
 		<button type="button">Button</button> 
 		<button type="button">Botón en <br>dos líneas</button>
+		<button type="button" disabled>Deshabilitado</button> 
 		<p>Ojo que un button debe tener <code>type="button"</code> si no se quiere que envíe automáticamente el formulario.</p></li>
 		
 		<li>A veces es útil tener estilos para que <a href="#" class="button">link</a> parezca botón <code>a.button</code> o un botón pequeño <a href="#" class="button small">small link</a> <code>a.button.small</code></li>
+		
+		<li>
+			<button type="button" class="rojo">.rojo</button>
+			<button type="button" class="verde">.verde</button>
+			<button type="button" class="azul">.azul</button>
+			<button type="button" class="amarillo">.amarillo</button>
+			<button type="button" class="oscuro">.oscuro</button>
+		</li>
+
 		<li><textarea name="nombre7" id="nombre7" cols="30" rows="10"></textarea></li>
 	</ul>
 </form>
@@ -377,7 +391,7 @@
 </ul></section>
 
 
-<section class="grid wide" id="grid">
+<section class="wrapper wide" id="grid">
 	<p><code>&lt;section class="grid wide"></code></p>
 	<h2>Grid system</h2>
 	<p>Sitema de grilla de 3 y 12 columnas</p>
@@ -426,6 +440,23 @@
 					<div class="content verdeClaro-bg">
 						<h3>
 							col-2-3
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad mobile-grid">
+				<div class="mobile-col-1-3">
+					<div class="content verdeClaro-bg">
+						<h3>
+							mobile-col-1-3
+						</h3>
+					</div>
+				</div>
+				<div class="mobile-col-2-3">
+					<div class="content verdeClaro-bg">
+						<h3>
+							mobile-col-2-3
+							<span>El contenedor tiene .mobile-grid</span>
 						</h3>
 					</div>
 				</div>
@@ -954,6 +985,36 @@
 					<div class="content verdeClaro-bg">
 						<h3>
 							8-12
+						</h3>
+					</div>
+				</div>
+			</div>
+	</div>
+	<hr>
+	<h2>Clases .push (para margen)</h2>
+	<div>
+		<!-- Grid 1/12 -->
+			<div class="grid grid-pad">
+				<div class="col-9-12 push-3-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							9-12 push-3-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-2-12 push-6-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							2-12 push-6-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-4-12">
+					<div class="content verdeClaro-bg">
+						<h3>
+							4-12
 						</h3>
 					</div>
 				</div>

@@ -53,6 +53,11 @@
 		h3{
 			font-size: 1em;
 			margin: 0;
+			span{
+				font-weight: normal;
+				font-family: Monaco,'Courier New',monospace;
+				font-size: 0.75em;
+			}
 		}
 		&.grisMasOscuro-bg, &.grisOscuro-bg, &.grisNegro-bg, &.rojo-bg{
 			color: white;

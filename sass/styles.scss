@@ -6,7 +6,7 @@
 @import "mejoras-2";
 @import "mejoras-3";
 
-$gridGutter:1em;
+$gridGutter:16px;
 $anchoDefault:970px;
 $anchoWide:1140px;
 $anchoMinimo:776px;
@@ -15,6 +15,13 @@ $anchoMinimo:776px;
 @import "forms";
 
 
+.wrapper{
+	max-width: $anchoDefault;
+	margin: 0 auto;
+	&.wide{
+		max-width: $anchoWide;
+	}	
+}
 
 @media print {
 	

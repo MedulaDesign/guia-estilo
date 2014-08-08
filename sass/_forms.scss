@@ -28,6 +28,23 @@
 
  */
 
+
+$rojo:$rojo;
+$rojoMasOscuro: #A31514;
+$rojoMasMasOscuro: #8B0C0B;
+$verde:$verde;
+$verdeMasOscuro: #087C24;
+$verdeMasMasOscuro: #09611E;
+$azul:#3A6ABC;
+$azulMasOscuro: #16479C;
+$azulMasMasOscuro: #0B3275;
+$amarillo:$amarilloIntenso;
+$amarilloMasOscuro: #DFBE00;
+$amarilloMasMasOscuro: #B39800;
+$oscuro:$grisOscuro;
+$oscuroMasOscuro: $grisMasOscuro;
+$oscuroMasMasOscuro: $grisNegro;
+
 .button,
 button,
 input[type=button],
@@ -36,27 +53,27 @@ input[type=submit]{
 	min-height: 38px;
 	display: inline-block;
 	vertical-align: top;
-	color: $grisMasClaro;
-	border: 1px solid $grisNegro;
+	color: $grisMasOscuro;
+	border: 1px solid #777;
 	border-radius: 4px;
 	padding: 4px 24px;
 	background: $grisMasOscuro;
-	background: $grisMasOscuro linear-gradient(top, $grisOscuro 0%, $grisMasOscuro 100%);
-	text-shadow: 1px 1px 1px black;
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(top, $grisClaro 0%, $grisMasClaro 100%);
+	text-shadow: -1px -1px 1px white;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 	&:link, &:visited{
-		color:$grisMasClaro;
-		background: linear-gradient(top, $grisOscuro 0%, $grisMasOscuro 100%);
+		color:$grisMasOscuro;
+		background: linear-gradient(top, $grisClaro 0%, $grisMasClaro 100%);
 	}
 	&:hover{
-		color: white;
+		color: black;
 		background: $grisNegro;
-		background: linear-gradient(bottom, $grisOscuro 0%, $grisMasOscuro 100%);
+		background: linear-gradient(bottom, $grisClaro 0%, $grisMasClaro 100%);
 	}
 	&:active{
-		color: $grisClaro;
-		background: black;
-		background: linear-gradient(top, $grisNegro 0%, $grisMasOscuro 100%);
+		color: $grisNegro;
+		background: #CCC;
+		background: linear-gradient(top, white 0%, $grisMasClaro 100%);
 	}
 	&:focus{
 
@@ -64,10 +81,115 @@ input[type=submit]{
 	&.small{
 		padding:0 12px;
 	}
+	&.rojo{
+		color: white;
+		background: $rojo;
+		background: linear-gradient(top, $rojo 0%, $rojoMasOscuro 100%);
+		text-shadow: 1px 1px 2px black;
+		border-color: $rojoMasMasOscuro;
+		&:link, &:visited{
+			color:white;
+			background: linear-gradient(top, $rojo 0%, $rojoMasOscuro 100%);
+		}
+		&:hover{
+			color: #DDD;
+			background: $rojoMasOscuro;
+			background: linear-gradient(bottom, $rojo 0%, $rojoMasOscuro 100%);
+		}
+		&:active{
+			color: white;
+			background: $rojoMasMasOscuro;
+			background: linear-gradient(top, $rojoMasOscuro 0%, $rojoMasMasOscuro 100%);
+		}
+	}
+	&.verde{
+		color: white;
+		background: $verde;
+		background: linear-gradient(top, $verde 0%, $verdeMasOscuro 100%);
+		text-shadow: 1px 1px 2px black;
+		border-color: $verdeMasMasOscuro;
+		&:link, &:visited{
+			color:white;
+			background: linear-gradient(top, $verde 0%, $verdeMasOscuro 100%);
+		}
+		&:hover{
+			color: #DDD;
+			background: $verdeMasOscuro;
+			background: linear-gradient(bottom, $verde 0%, $verdeMasOscuro 100%);
+		}
+		&:active{
+			color: white;
+			background: $verdeMasMasOscuro;
+			background: linear-gradient(top, $verdeMasOscuro 0%, $verdeMasMasOscuro 100%);
+		}
+	}
+	&.azul{
+		color: white;
+		background: $azul;
+		background: linear-gradient(top, $azul 0%, $azulMasOscuro 100%);
+		text-shadow: 1px 1px 2px black;
+		border-color: $azulMasMasOscuro;
+		&:link, &:visited{
+			color:white;
+			background: linear-gradient(top, $azul 0%, $azulMasOscuro 100%);
+		}
+		&:hover{
+			color: #DDD;
+			background: $azulMasOscuro;
+			background: linear-gradient(bottom, $azul 0%, $azulMasOscuro 100%);
+		}
+		&:active{
+			color: white;
+			background: $azulMasMasOscuro;
+			background: linear-gradient(top, $azulMasOscuro 0%, $azulMasMasOscuro 100%);
+		}
+	}
+	&.amarillo{
+		color: #333;
+		background: $amarillo;
+		background: linear-gradient(top, $amarillo 0%, $amarilloMasOscuro 100%);
+		text-shadow: -1px -1px 1px white;
+		border-color: $amarilloMasMasOscuro;
+		&:link, &:visited{
+			color:#333;
+			background: linear-gradient(top, $amarillo 0%, $amarilloMasOscuro 100%);
+		}
+		&:hover{
+			color: black;
+			background: $amarilloMasOscuro;
+			background: linear-gradient(bottom, $amarillo 0%, $amarilloMasOscuro 100%);
+		}
+		&:active{
+			color: black;
+			background: $amarilloMasMasOscuro;
+			background: linear-gradient(top, $amarilloMasOscuro 0%, $amarilloMasMasOscuro 100%);
+		}
+	}
+	&.oscuro{
+		color: #DDD;
+		background: $oscuro;
+		background: linear-gradient(top, $oscuro 0%, $oscuroMasOscuro 100%);
+		text-shadow: 1px 1px 2px black;
+		border-color: $oscuroMasMasOscuro;
+		&:link, &:visited{
+			color:#DDD;
+			background: linear-gradient(top, $oscuro 0%, $oscuroMasOscuro 100%);
+		}
+		&:hover{
+			color: white;
+			background: $oscuroMasOscuro;
+			background: linear-gradient(bottom, $oscuro 0%, $oscuroMasOscuro 100%);
+		}
+		&:active{
+			color: white;
+			background: $oscuroMasMasOscuro;
+			background: linear-gradient(top, $oscuroMasOscuro 0%, $oscuroMasMasOscuro 100%);
+		}
+	}
 	&[disabled]{
-		background: #888;
+		background: #BBB;
 		filter: none;
-		color:#BBB;
+		color:#666;
 		border: 1px solid $grisClaro;
 		text-shadow: none;
 		box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
