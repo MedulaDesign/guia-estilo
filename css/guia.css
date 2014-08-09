@@ -1,1 +1,48 @@
-.definiciones ul{padding:0;overflow:hidden}.definiciones ul li{list-style:none}.definiciones .color{max-width:280px;margin:1em 10px;padding:10px;border:1px solid #999;float:left}.definiciones .font{max-width:520px;margin:1em 10px;padding:10px;border:1px solid #999;float:left}.definiciones h3{margin-top:0}.definiciones .muestra{width:6em;height:3em;border:1px solid #777}.definiciones .hex,.definiciones .variable{border:1px solid #bbb;background-color:#f0f0f0;-webkit-border-radius:3px;border-radius:3px;padding:1px 3px}.definiciones .nombre,.definiciones .specimen{font-size:2em}.grid .content{padding:1em}.grid .content h3{font-size:1em;margin:0}.grid .content h3 span{font-weight:400;font-family:Monaco,'Courier New',monospace;font-size:.75em}.grid .content.grisMasOscuro-bg,.grid .content.grisNegro-bg,.grid .content.grisOscuro-bg,.grid .content.rojo-bg{color:#fff}.grid .col-1-12 .content h3{font-size:.865em;line-height:16px}
+.definiciones ul {
+  padding: 0;
+  overflow: hidden; }
+  .definiciones ul li {
+    list-style: none; }
+.definiciones .color {
+  max-width: 280px;
+  margin: 1em 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  float: left; }
+.definiciones .font {
+  max-width: 520px;
+  margin: 1em 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  float: left; }
+.definiciones h3 {
+  margin-top: 0; }
+.definiciones .muestra {
+  width: 6em;
+  height: 3em;
+  border: 1px solid #777; }
+.definiciones .hex, .definiciones .variable {
+  border: 1px solid #bbb;
+  background-color: #f0f0f0;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 1px 3px; }
+.definiciones .nombre {
+  font-size: 2em; }
+.definiciones .specimen {
+  font-size: 2em; }
+
+.grid .content {
+  padding: 1em; }
+  .grid .content h3 {
+    font-size: 1em;
+    margin: 0; }
+    .grid .content h3 span {
+      font-weight: normal;
+      font-family: Monaco, 'Courier New', monospace;
+      font-size: 0.75em; }
+  .grid .content.grisMasOscuro-bg, .grid .content.grisOscuro-bg, .grid .content.grisNegro-bg, .grid .content.rojo-bg {
+    color: white; }
+.grid .col-1-12 .content h3 {
+  font-size: 0.865em;
+  line-height: 16px; }
