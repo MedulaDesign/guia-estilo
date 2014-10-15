@@ -1,0 +1,173 @@
+/**
+ * Somtimes buttons is all I need to style
+ * Here are the general button styles.
+ */
+
+/**
+
+888b.    8    8    88888    88888    .d88b.    8b  8    .d88b.
+8wwwP    8    8      8        8      8P  Y8    8Ybm8    YPwww.
+8   b    8b..d8      8        8      8b  d8    8  "8        d8
+888P'    `Y88P'      8        8      `Y88P'    8   8    `Y88P'
+
+ */
+
+
+
+.button,
+button,
+input[type=button],
+input[type=submit]{
+	box-sizing: content-box;
+	min-height: 38px;
+	display: inline-block;
+	vertical-align: top;
+	color: $grisMasOscuro;
+	border: 1px solid #777;
+	border-radius: 4px;
+	padding: 4px 24px;
+	background: $grisClaro;
+	background: linear-gradient(top, $grisClaro 0%, $grisMasClaro 100%);
+	text-shadow: -1px -1px 1px white;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+	&:link, &:visited{
+		color:$grisMasOscuro;
+		background: linear-gradient(top, $grisClaro 0%, $grisMasClaro 100%);
+	}
+	&:hover{
+		color: black;
+		background: $grisMasClaro;
+		background: linear-gradient(bottom, $grisClaro 0%, $grisMasClaro 100%);
+	}
+	&:active{
+		color: $grisNegro;
+		background: #CCC;
+		background: linear-gradient(top, white 0%, $grisMasClaro 100%);
+	}
+	&:focus{
+
+	}
+	&.small{
+		padding:0 12px;
+	}
+	&.rojo{
+		color: white;
+		background: $rojo;
+		background: linear-gradient(top, $rojo 0%, $rojoMasOscuro 100%);
+		text-shadow: 1px 1px 2px black;
+		border-color: $rojoMasMasOscuro;
+		&:link, &:visited{
+			color:white;
+			background: linear-gradient(top, $rojo 0%, $rojoMasOscuro 100%);
+		}
+		&:hover{
+			color: #DDD;
+			background: $rojoMasOscuro;
+			background: linear-gradient(bottom, $rojo 0%, $rojoMasOscuro 100%);
+		}
+		&:active{
+			color: white;
+			background: $rojoMasMasOscuro;
+			background: linear-gradient(top, $rojoMasOscuro 0%, $rojoMasMasOscuro 100%);
+		}
+	}
+	&.verde{
+		color: white;
+		background: $verde;
+		background: linear-gradient(top, $verde 0%, $verdeMasOscuro 100%);
+		text-shadow: 1px 1px 2px black;
+		border-color: $verdeMasMasOscuro;
+		&:link, &:visited{
+			color:white;
+			background: linear-gradient(top, $verde 0%, $verdeMasOscuro 100%);
+		}
+		&:hover{
+			color: #DDD;
+			background: $verdeMasOscuro;
+			background: linear-gradient(bottom, $verde 0%, $verdeMasOscuro 100%);
+		}
+		&:active{
+			color: white;
+			background: $verdeMasMasOscuro;
+			background: linear-gradient(top, $verdeMasOscuro 0%, $verdeMasMasOscuro 100%);
+		}
+	}
+	&.azul{
+		color: white;
+		background: $azul;
+		background: linear-gradient(top, $azul 0%, $azulMasOscuro 100%);
+		text-shadow: 1px 1px 2px black;
+		border-color: $azulMasMasOscuro;
+		&:link, &:visited{
+			color:white;
+			background: linear-gradient(top, $azul 0%, $azulMasOscuro 100%);
+		}
+		&:hover{
+			color: #DDD;
+			background: $azulMasOscuro;
+			background: linear-gradient(bottom, $azul 0%, $azulMasOscuro 100%);
+		}
+		&:active{
+			color: white;
+			background: $azulMasMasOscuro;
+			background: linear-gradient(top, $azulMasOscuro 0%, $azulMasMasOscuro 100%);
+		}
+	}
+	&.amarillo{
+		color: #333;
+		background: $amarillo;
+		background: linear-gradient(top, $amarillo 0%, $amarilloMasOscuro 100%);
+		text-shadow: -1px -1px 1px white;
+		border-color: $amarilloMasMasOscuro;
+		&:link, &:visited{
+			color:#333;
+			background: linear-gradient(top, $amarillo 0%, $amarilloMasOscuro 100%);
+		}
+		&:hover{
+			color: black;
+			background: $amarilloMasOscuro;
+			background: linear-gradient(bottom, $amarillo 0%, $amarilloMasOscuro 100%);
+		}
+		&:active{
+			color: black;
+			background: $amarilloMasMasOscuro;
+			background: linear-gradient(top, $amarilloMasOscuro 0%, $amarilloMasMasOscuro 100%);
+		}
+	}
+	&.oscuro{
+		color: #DDD;
+		background: $oscuro;
+		background: linear-gradient(top, $oscuro 0%, $oscuroMasOscuro 100%);
+		text-shadow: 1px 1px 2px black;
+		border-color: $oscuroMasMasOscuro;
+		&:link, &:visited{
+			color:#DDD;
+			background: linear-gradient(top, $oscuro 0%, $oscuroMasOscuro 100%);
+		}
+		&:hover{
+			color: white;
+			background: $oscuroMasOscuro;
+			background: linear-gradient(bottom, $oscuro 0%, $oscuroMasOscuro 100%);
+		}
+		&:active{
+			color: white;
+			background: $oscuroMasMasOscuro;
+			background: linear-gradient(top, $oscuroMasOscuro 0%, $oscuroMasMasOscuro 100%);
+		}
+	}
+	&[disabled]{
+		background: #BBB;
+		filter: none;
+		color:#666;
+		border: 1px solid $grisClaro;
+		text-shadow: none;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+	}
+}
+.button{
+	line-height: 38px;
+	vertical-align: baseline;
+	&:link, &:visited{
+		text-decoration: none;
+	}
+}

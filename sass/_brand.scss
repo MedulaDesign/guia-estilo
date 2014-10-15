@@ -1,3 +1,6 @@
+/**
+ * Colors
+ */
 $brandColor: #289B48;
 $grisClaro: #D6D6D6;
 $grisMasClaro: #F0F0F0;
@@ -10,10 +13,17 @@ $verde: #289B48;
 $rojo: #C42220;
 $amarilloIntenso: #fcd700;//amarillo médula
 
+/**
+ * Font Stacks
+ */
 $sans-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif-stack: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 $display-stack: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 
+/**
+ * Classes reflecting the variables
+ * good for prototyping
+ */
 .brandColor{color:$brandColor;}
 .brandColor-bg{background-color: $brandColor;}
 .grisClaro{color:$grisClaro;}
@@ -46,3 +56,13 @@ $display-stack: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Hel
 .display{
 	font-family: $display-stack;
 }
+
+
+/**
+ * Other variables
+ */
+
+$gridGutter:16px;
+$anchoDefault:970px;
+$anchoWide:1140px;
+$anchoMinimo:776px;

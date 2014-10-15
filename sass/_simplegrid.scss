@@ -9,12 +9,16 @@
   Site - iminabar.com
 */
 
+/**
+ * I don't like to globally set border-box. 
+ */
 /*
 *, *:after, *:before {
 	box-sizing: border-box;
 }
 //*/
 
+$gridGutter:16px !default;
 
 body {
 	margin: 0px;

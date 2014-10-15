@@ -1,28 +1,21 @@
 /*!relative path to source SCSS file: ../sass/styles.css */
 
+//Google webfonts go after this line.
+
 @import "brand";// ←---Here be vars
 @import "normalize";
 @import "mejoras-1";
 @import "mejoras-2";
 @import "mejoras-3";
 
-$gridGutter:16px;
-$anchoDefault:970px;
-$anchoWide:1140px;
-$anchoMinimo:776px;
-
 @import "simplegrid";
-@import "forms";
+@import "layout";
 
+/**
+ * Somtimes I comment out these and compile them apart in a forms.css file
+ */
+@import "forms/form-colors";
+@import "forms/forms";
+@import "forms/buttons";
 
-.wrapper{
-	max-width: $anchoDefault;
-	margin: 0 auto;
-	&.wide{
-		max-width: $anchoWide;
-	}	
-}
-
-@media print {
-	
-}
+@import "print";

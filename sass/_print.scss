@@ -1,0 +1,6 @@
+/**
+ * Very very basic print styling
+ */
+@media print {
+	body, select, input, textarea, a, a:link, a:visited {color: #000;}
+}

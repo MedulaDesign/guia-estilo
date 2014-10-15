@@ -1,0 +1,7 @@
+.wrapper{
+	max-width: $anchoDefault;
+	margin: 0 auto;
+	&.wide{
+		max-width: $anchoWide;
+	}	
+}

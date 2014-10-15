@@ -53,10 +53,3 @@ blockquote{
 	margin-left: 0.5em;
 	padding: 0 0.5em;
 }
-
-
-/* Print styles!
--------------------------------------------------------------------------------*/
-@media print {
-	body, select, input, textarea, a, a:link, a:visited {color: #000;}
-}
