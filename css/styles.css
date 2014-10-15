@@ -532,6 +532,9 @@ Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
 .aDerecha {
   text-align: right; }
 
+.aCentro {
+  text-align: center; }
+
 /* márgenes rápidos */
 .mt0 {
   margin-top: 0; }
