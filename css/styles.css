@@ -2,18 +2,23 @@
 /**
  * Colors
  */
-/**
- * Font Stacks
- */
-/**
- * Classes reflecting the variables
- * good for prototyping
- */
 .brandColor {
   color: #289B48; }
 
 .brandColor-bg {
   background-color: #289B48; }
+
+.brandColor2 {
+  color: #E5BC21; }
+
+.brandColor2-bg {
+  background-color: #E5BC21; }
+
+.brandColor3 {
+  color: #84BF41; }
+
+.brandColor3-bg {
+  background-color: #84BF41; }
 
 .grisClaro {
   color: #D6D6D6; }
@@ -22,10 +27,22 @@
   background-color: #D6D6D6; }
 
 .grisMasClaro {
-  color: #F0F0F0; }
+  color: #EEE; }
 
 .grisMasClaro-bg {
+  background-color: #EEE; }
+
+.grisBlanco {
+  color: #F0F0F0; }
+
+.grisBlanco-bg {
   background-color: #F0F0F0; }
+
+.grisMedio {
+  color: #777; }
+
+.grisMedio-bg {
+  background-color: #777; }
 
 .grisOscuro {
   color: #414141; }
@@ -51,23 +68,11 @@
 .amarillo-bg {
   background-color: #E5BC21; }
 
-.verdeClaro {
-  color: #84BF41; }
-
-.verdeClaro-bg {
-  background-color: #84BF41; }
-
 .verde {
   color: #289B48; }
 
 .verde-bg {
   background-color: #289B48; }
-
-.amarilloIntenso {
-  color: #fcd700; }
-
-.amarilloIntenso-bg {
-  background-color: #fcd700; }
 
 .rojo {
   color: #C42220; }
@@ -75,6 +80,31 @@
 .rojo-bg {
   background-color: #C42220; }
 
+.azul {
+  color: #3A6ABC; }
+
+.azul-bg {
+  background-color: #3A6ABC; }
+
+.verdeClaro {
+  color: #84BF41; }
+
+.verdeClaro-bg {
+  background-color: #84BF41; }
+
+.amarilloIntenso {
+  color: #fcd700; }
+
+.amarilloIntenso-bg {
+  background-color: #fcd700; }
+
+/**
+ * Font Stacks
+ */
+/**
+ * Classes reflecting the variables
+ * good for prototyping
+ */
 .sans {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -994,8 +1024,8 @@ form > ul, fieldset > ul, .tipoForm > ul {
     min-height: 48px;
     margin-left: 2%;
     margin-top: 1em;
-    background-color: #F0F0F0;
-    border: 1px solid #F0F0F0;
+    background-color: #EEE;
+    border: 1px solid #EEE;
     position: relative;
     -webkit-border-radius: 5px;
             border-radius: 5px;
@@ -1094,29 +1124,29 @@ form > ul, fieldset > ul, .tipoForm > ul {
           border-radius: 4px;
   padding: 4px 24px;
   background: #D6D6D6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D6D6D6), to(#F0F0F0));
-  background: -webkit-linear-gradient(top, #D6D6D6 0%, #F0F0F0 100%);
-  background: linear-gradient(top, #D6D6D6 0%, #F0F0F0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#D6D6D6), to(#EEE));
+  background: -webkit-linear-gradient(top, #D6D6D6 0%, #EEE 100%);
+  background: linear-gradient(top, #D6D6D6 0%, #EEE 100%);
   text-shadow: -1px -1px 1px white;
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); }
   .button:link, .button:visited, button:link, button:visited, input[type=button]:link, input[type=button]:visited, input[type=submit]:link, input[type=submit]:visited {
     color: #333333;
-    background: -webkit-gradient(linear, left top, left bottom, from(#D6D6D6), to(#F0F0F0));
-    background: -webkit-linear-gradient(top, #D6D6D6 0%, #F0F0F0 100%);
-    background: linear-gradient(top, #D6D6D6 0%, #F0F0F0 100%); }
+    background: -webkit-gradient(linear, left top, left bottom, from(#D6D6D6), to(#EEE));
+    background: -webkit-linear-gradient(top, #D6D6D6 0%, #EEE 100%);
+    background: linear-gradient(top, #D6D6D6 0%, #EEE 100%); }
   .button:hover, button:hover, input[type=button]:hover, input[type=submit]:hover {
     color: black;
-    background: #F0F0F0;
-    background: -webkit-gradient(linear, left bottom, left top, from(#D6D6D6), to(#F0F0F0));
-    background: -webkit-linear-gradient(bottom, #D6D6D6 0%, #F0F0F0 100%);
-    background: linear-gradient(bottom, #D6D6D6 0%, #F0F0F0 100%); }
+    background: #EEE;
+    background: -webkit-gradient(linear, left bottom, left top, from(#D6D6D6), to(#EEE));
+    background: -webkit-linear-gradient(bottom, #D6D6D6 0%, #EEE 100%);
+    background: linear-gradient(bottom, #D6D6D6 0%, #EEE 100%); }
   .button:active, button:active, input[type=button]:active, input[type=submit]:active {
     color: #1A1A1A;
     background: #CCC;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#F0F0F0));
-    background: -webkit-linear-gradient(top, white 0%, #F0F0F0 100%);
-    background: linear-gradient(top, white 0%, #F0F0F0 100%); }
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#EEE));
+    background: -webkit-linear-gradient(top, white 0%, #EEE 100%);
+    background: linear-gradient(top, white 0%, #EEE 100%); }
   .button.small, button.small, input[type=button].small, input[type=submit].small {
     padding: 0 12px; }
   .button.rojo, button.rojo, input[type=button].rojo, input[type=submit].rojo {

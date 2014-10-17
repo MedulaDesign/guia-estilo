@@ -2,16 +2,60 @@
  * Colors
  */
 $brandColor: #289B48;
+$brandColor2: #E5BC21;
+$brandColor3: #84BF41;
+
 $grisClaro: #D6D6D6;
-$grisMasClaro: #F0F0F0;
+$grisMasClaro: #EEE;
+$grisBlanco: #F0F0F0;
+$grisMedio: #777;
 $grisOscuro: #414141;
 $grisMasOscuro: #333333;
 $grisNegro: #1A1A1A;
+
 $amarillo: #E5BC21;
-$verdeClaro: #84BF41;
 $verde: #289B48;
 $rojo: #C42220;
+$azul: #3A6ABC;
+
+$verdeClaro: #84BF41;
 $amarilloIntenso: #fcd700;//amarillo médula
+
+.brandColor{color:$brandColor;}
+.brandColor-bg{background-color: $brandColor;}
+.brandColor2{color:$brandColor2;}
+.brandColor2-bg{background-color: $brandColor2;}
+.brandColor3{color:$brandColor3;}
+.brandColor3-bg{background-color: $brandColor3;}
+
+.grisClaro{color:$grisClaro;}
+.grisClaro-bg{background-color: $grisClaro;}
+.grisMasClaro{color:$grisMasClaro;}
+.grisMasClaro-bg{background-color: $grisMasClaro;}
+.grisBlanco{color:$grisBlanco;}
+.grisBlanco-bg{background-color: $grisBlanco;}
+.grisMedio{color:$grisMedio;}
+.grisMedio-bg{background-color: $grisMedio;}
+.grisOscuro{color:$grisOscuro;}
+.grisOscuro-bg{background-color: $grisOscuro;}
+.grisMasOscuro{color:$grisMasOscuro;}
+.grisMasOscuro-bg{background-color: $grisMasOscuro;}
+.grisNegro{color:$grisNegro;}
+.grisNegro-bg{background-color: $grisNegro;}
+
+.amarillo{color:$amarillo;}
+.amarillo-bg{background-color: $amarillo;}
+.verde{color:$verde;}
+.verde-bg{background-color: $verde;}
+.rojo{color:$rojo;}
+.rojo-bg{background-color: $rojo;}
+.azul{color:$azul;}
+.azul-bg{background-color: $azul;}
+
+.verdeClaro{color:$verdeClaro;}
+.verdeClaro-bg{background-color: $verdeClaro;}
+.amarilloIntenso{color:$amarilloIntenso;}
+.amarilloIntenso-bg{background-color: $amarilloIntenso;}
 
 /**
  * Font Stacks
@@ -24,28 +68,25 @@ $display-stack: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Hel
  * Classes reflecting the variables
  * good for prototyping
  */
-.brandColor{color:$brandColor;}
-.brandColor-bg{background-color: $brandColor;}
-.grisClaro{color:$grisClaro;}
-.grisClaro-bg{background-color: $grisClaro;}
-.grisMasClaro{color:$grisMasClaro;}
-.grisMasClaro-bg{background-color: $grisMasClaro;}
-.grisOscuro{color:$grisOscuro;}
-.grisOscuro-bg{background-color: $grisOscuro;}
-.grisMasOscuro{color:$grisMasOscuro;}
-.grisMasOscuro-bg{background-color: $grisMasOscuro;}
-.grisNegro{color:$grisNegro;}
-.grisNegro-bg{background-color: $grisNegro;}
-.amarillo{color:$amarillo;}
-.amarillo-bg{background-color: $amarillo;}
-.verdeClaro{color:$verdeClaro;}
-.verdeClaro-bg{background-color: $verdeClaro;}
-.verde{color:$verde;}
-.verde-bg{background-color: $verde;}
-.amarilloIntenso{color:$amarilloIntenso;}
-.amarilloIntenso-bg{background-color: $amarilloIntenso;}
-.rojo{color:$rojo;}
-.rojo-bg{background-color: $rojo;}
+
+@mixin colorsRender{
+
+	$color_names: $brandColor $brandColor2 $brandColor3 $grisClaro $grisMasClaro $grisBlanco $grisMedio $grisOscuro $grisMasOscuro $grisNegro $amarillo $verde $rojo $azul $verdeClaro $amarilloIntenso;
+	$color_vars: $brandColor $brandColor2 $brandColor3 $grisClaro $grisMasClaro $grisBlanco $grisMedio $grisOscuro $grisMasOscuro $grisNegro $amarillo $verde $rojo $azul $verdeClaro $amarilloIntenso;
+
+	/**
+	 * Loop on vars to generate the classes
+	 * ---------------------------------------------------------
+	 * ### it didn't work, it trows "invalid selector after" ###
+	 * ---------------------------------------------------------
+	 * Thanks to: Dale Sande. http://blackfalcon.roughdraft.io/4615645-iterate-list-to-produce-placeholder-classes;
+	 * The important functions are index() and nth()
+	 * In this same lik there's an alternative syntax, that could be more readable for some
+	 */
+
+
+}
+
 
 .sans{
 	font-family: $sans-stack;
