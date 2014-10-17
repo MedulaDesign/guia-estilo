@@ -2,108 +2,162 @@
 /**
  * Colors
  */
+/**
+ * Classes reflecting the variables
+ * good for prototyping
+ */
+/**
+ * Loop on vars to generate the classes
+ * Thanks to: Dale Sande. http://blackfalcon.roughdraft.io/4615645-iterate-list-to-produce-placeholder-classes
+ * The important functions are index() and nth()
+ * In this same lik there's an alternative syntax, that could be more readable for some
+ */
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .brandColor {
   color: #289B48; }
 
 .brandColor-bg {
-  background-color: #289B48; }
+  background: #289B48; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .brandColor2 {
   color: #E5BC21; }
 
 .brandColor2-bg {
-  background-color: #E5BC21; }
+  background: #E5BC21; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .brandColor3 {
   color: #84BF41; }
 
 .brandColor3-bg {
-  background-color: #84BF41; }
+  background: #84BF41; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .grisClaro {
   color: #D6D6D6; }
 
 .grisClaro-bg {
-  background-color: #D6D6D6; }
+  background: #D6D6D6; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .grisMasClaro {
   color: #EEE; }
 
 .grisMasClaro-bg {
-  background-color: #EEE; }
+  background: #EEE; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .grisBlanco {
   color: #F0F0F0; }
 
 .grisBlanco-bg {
-  background-color: #F0F0F0; }
+  background: #F0F0F0; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .grisMedio {
   color: #777; }
 
 .grisMedio-bg {
-  background-color: #777; }
+  background: #777; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .grisOscuro {
   color: #414141; }
 
 .grisOscuro-bg {
-  background-color: #414141; }
+  background: #414141; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .grisMasOscuro {
   color: #333333; }
 
 .grisMasOscuro-bg {
-  background-color: #333333; }
+  background: #333333; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .grisNegro {
   color: #1A1A1A; }
 
 .grisNegro-bg {
-  background-color: #1A1A1A; }
+  background: #1A1A1A; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .amarillo {
   color: #E5BC21; }
 
 .amarillo-bg {
-  background-color: #E5BC21; }
+  background: #E5BC21; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .verde {
   color: #289B48; }
 
 .verde-bg {
-  background-color: #289B48; }
+  background: #289B48; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .rojo {
   color: #C42220; }
 
 .rojo-bg {
-  background-color: #C42220; }
+  background: #C42220; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .azul {
   color: #3A6ABC; }
 
 .azul-bg {
-  background-color: #3A6ABC; }
+  background: #3A6ABC; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .verdeClaro {
   color: #84BF41; }
 
 .verdeClaro-bg {
-  background-color: #84BF41; }
+  background: #84BF41; }
 
+/**
+	 * You can't use the name of variable as a class, it will get printed as the value.
+	 */
 .amarilloIntenso {
   color: #fcd700; }
 
 .amarilloIntenso-bg {
-  background-color: #fcd700; }
+  background: #fcd700; }
 
 /**
  * Font Stacks
- */
-/**
- * Classes reflecting the variables
- * good for prototyping
  */
 .sans {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }

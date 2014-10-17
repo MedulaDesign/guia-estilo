@@ -6,6 +6,8 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var minifycss = require('gulp-minify-css');
 var livereload = require('gulp-livereload');
+var concat = require('gulp-concat');
+var jsonSass = require('gulp-json-sass');
 
 // Styles
 gulp.task('sass', function() {
@@ -20,6 +22,13 @@ gulp.task('sass', function() {
   .pipe(livereload());
 });
 
+gulp.task('vars', function() {
+  return gulp.src('vars.json')
+    .pipe(jsonSass())
+    .pipe(concat('_vars.scss'))
+    //.pipe(sass())
+    .pipe(gulp.dest('sass/'));
+});
 
 gulp.task('watch', function() {
 

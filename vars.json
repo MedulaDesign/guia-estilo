@@ -1,0 +1,20 @@
+{
+"brandColor": "#289B48",
+"brandColor2": "#E5BC21",
+"brandColor3": "#84BF41",
+"grisClaro": "#D6D6D6",
+"grisMasClaro": "#EEE",
+"grisBlanco": "#F0F0F0",
+"grisMedio": "#777",
+"grisOscuro": "#414141",
+"grisMasOscuro": "#333333",
+"grisNegro": "#1A1A1A",
+"amarillo": "#E5BC21",
+"verde": "#289B48",
+"rojo": "#C42220",
+"azul": "#3A6ABC",
+"verdeClaro": "#84BF41",
+"amarilloIntenso": "#fcd700",
+"color_names": "brandColor brandColor2 brandColor3 grisClaro grisMasClaro grisBlanco grisMedio grisOscuro grisMasOscuro grisNegro amarillo verde rojo azul verdeClaro amarilloIntenso",
+"color_vars": "$brandColor $brandColor2 $brandColor3 $grisClaro $grisMasClaro $grisBlanco $grisMedio $grisOscuro $grisMasOscuro $grisNegro $amarillo $verde $rojo $azul $verdeClaro $amarilloIntenso" 
+}
